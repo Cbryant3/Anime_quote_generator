@@ -1,0 +1,64 @@
+body {
+    background-image: url('anime-collage-1920-x-1080-wallpaper-fwx8xyvh2rd4ju8n.jpg');
+    background-size: cover;          /* make image cover entire screen */
+    background-position: center;     /* center the image */
+    background-repeat: no-repeat;    /* prevent tiling */
+    height: 100vh;                   /* full viewport height */
+    margin: 0;                        /* remove default margin */
+    font-family: Arial, sans-serif;
+    display: flex;                   /* center content vertically & horizontally */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;                    /* optional: make text visible on image */
+}
+
+/* Simple black outline */
+.outlined-text {
+  color: white; /* text color */
+  text-shadow:
+     -1px -1px 0 #000,
+      1px -1px 0 #000,
+     -1px  1px 0 #000,
+      1px  1px 0 #000;
+}
+#quote-box {
+    background: rgba(0, 0, 0, 0.6); /* semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 700px;
+    width: 90%;
+    margin: 0 10px; /* prevents edges from touching screen */
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+blockquote {
+    font-size: clamp(16px, 2vw, 22px);
+    font-style: italic;
+    margin: 20px auto;
+    max-width: 600px;
+}
+#author {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+#tweet-quote {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #1DA1F2;
+    font-size: 16px;
+}
